@@ -1,0 +1,7 @@
+{
+  "name": "vaiv",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
