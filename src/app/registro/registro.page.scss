@@ -1,0 +1,84 @@
+ion-content {
+  --background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+  width: 100%;
+  padding: 10px 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.logo-container img {
+  width: 450px;
+  height: auto;
+  margin-bottom: -110px;
+  margin-top: -200px;
+}
+
+ion-card {
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+ion-item {
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+  --background: transparent;
+  --ion-background-color: transparent;
+  margin-bottom: 15px;
+  color: black;
+}
+
+ion-label {
+  color: #000000;
+}
+
+ion-input {
+  color: #000000;
+}
+
+ion-button {
+  border-radius: 10px;
+  transition: background 3s ease-in-out, color 1s ease-in-out;
+  --background: linear-gradient(45deg, #ffffff, #13181f);
+}
+
+ion-button:hover {
+  --background: linear-gradient(45deg, #000307, #1a1a2e);
+  --color: #ffffff;
+}
+
+.custom-button {
+  width: 80%;
+  max-width: 100px;
+  margin: 20px auto;
+}

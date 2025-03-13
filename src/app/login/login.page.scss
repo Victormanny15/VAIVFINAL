@@ -1,0 +1,116 @@
+ion-content {
+  --background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+  height: 100vh; /* Asegura que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar contenido verticalmente */
+  padding-top: 0; /* Elimina cualquier padding superior */
+  padding-bottom: 0; /* Elimina cualquier padding inferior */
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec); /* Asegura que el header tenga el mismo fondo */
+  width: 100%;
+  padding: 10px 0; /* Añade padding para espaciar */
+}
+
+
+/* Contenedor Principal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+}
+
+/* Contenedor del Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; /* Eliminar margen para que esté aún más cerca del ion-card */
+}
+
+.logo-container img {
+  width: 450px; /* Aumenta el tamaño del logo */
+  height: auto;
+  margin-bottom: -110px; /* Hace que el logo se superponga ligeramente al ion-card */
+  margin-top: -200px;
+}
+
+/* Estilo del Ion-Card */
+ion-card {
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec); /* Fondo degradado */
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ajustar sombra */
+  border-radius: 10px;
+  padding-top: 20px; /* Añadir padding superior para que el logo no se superponga demasiado */
+}
+
+/* Estilo de los Elementos */
+ion-item {
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec); /* Asegura que los ion-items tengan el mismo fondo degradado */
+  --background: transparent; /* Asegura que los ion-items sean transparentes */
+  --ion-background-color: transparent; /* Asegura que el fondo de los ion-items sea transparente */
+  margin-bottom: 15px;
+  color: black;
+}
+
+ion-label {
+  color: #000000; /* Color blanco para el texto del label */
+}
+
+ion-input {
+  color: #000000; /* Color blanco para el texto del input */
+  
+}
+
+/* Botón de Inicio de Sesión */
+ion-button {
+  border-radius: 10px;
+  transition: background 3s ease-in-out, color 1s ease-in-out;
+  --background: linear-gradient(45deg, #ffffff, #13181f);
+}
+
+ion-button:hover {
+  --background: linear-gradient(45deg, #000307, #1a1a2e);
+  --color: #ffffff;
+}
+
+/* Estilo Personalizado del Botón */
+.custom-button {
+  width: 80%; /* Puedes ajustar el porcentaje o usar px */
+  max-width: 100px; /* Evita que sea demasiado grande en pantallas grandes */
+  margin: 20px auto; /* Centra el botón */
+}
+
+/* Enlace de Registro */
+.register-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff; /* Color blanco para el texto */
+}
+
+.register-link p {
+  margin: 0;
+  color: #000000;
+}
+
+.register-link a {
+  color: #ffffff; /* Color blanco para el enlace */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  color: #165fbb;
+}
+
+.register-link a:hover {
+  color: #165fbb;
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<ion-content class="ion-padding">
+  <ion-header class="header">
+    <h1 class="brand-title">Registro</h1>
+  </ion-header>
+
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="assets/vaiv.png" alt="Logo" class="login-logo">
+    </div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Crear una Cuenta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form (ngSubmit)="register()">
+          <ion-item>
+            <ion-input type="text" label="Usuario" [(ngModel)]="name" name="name" placeholder="Ingrese su nombre" required labelPlacement="floating"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input label="Contraseña" type="password" [(ngModel)]="password" name="password" placeholder="Ingrese su contraseña" required labelPlacement="floating"></ion-input>
+          </ion-item>
+
+          <div class="ion-text-center">
+            <ion-button class="custom-button" type="submit">Registrar</ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-content>
+  <div class="dashboard-container">
+    <div class="dashboard-content">
+      <!-- Header Section -->
+      <ion-header class="header">
+        <h1 class="brand-title">VAIV</h1>
+        <ion-img src="assets/vaiv.png" alt="Logo" loading="lazy" class="brand-logo"></ion-img>
+      </ion-header>
+
+      <!-- Lights Section -->
+      <ion-card class="lights-section">
+        <ion-card-header>
+          <ion-card-title class="section-title">Luces Disponibles</ion-card-title>
+        </ion-card-header>
+        <ion-list>
+          <!-- Light Item 1 -->
+          <ion-item class="light-item">
+            <img [src]="light1 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+            <ion-label class="light-title">Luz de la Calle</ion-label>
+            <div class="button-group">
+              <ion-button [ngClass]="{'btn-on': light1 === 'on', 'btn-off': light1 === 'off'}" (click)="toggleLight('light1')">{{ light1 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+            </div>
+          </ion-item>
+
+          <!-- Light Item 2 -->
+          <ion-item class="light-item">
+            <img [src]="light2 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+            <ion-label class="light-title">Luz de la Calle B</ion-label>
+            <div class="button-group">
+              <ion-button [ngClass]="{'btn-on': light2 === 'on', 'btn-off': light2 === 'off'}" (click)="toggleLight('light2')">{{ light2 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+            </div>
+          </ion-item>
+
+          <!-- Light Item 3 -->
+          <ion-item class="light-item">
+            <img [src]="light3 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+            <ion-label class="light-title">Luz de la Plaza</ion-label>
+            <div class="button-group">
+              <ion-button [ngClass]="{'btn-on': light3 === 'on', 'btn-off': light3 === 'off'}" (click)="toggleLight('light3')">{{ light3 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+
+      <!-- Global Controls -->
+      <div class="global-controls">
+        <ion-button class="global-btn global-btn-off" (click)="toggleAllLights('off')">Apagar todas</ion-button>
+        <ion-button class="global-btn global-btn-on" (click)="toggleAllLights('on')">Encender todas</ion-button>
+      </div>
+
+      <!-- Logout Button -->
+      <div class="logout-button">
+        <ion-button class="global-btn global-btn-off" (click)="logout()">Cerrar Sesión</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

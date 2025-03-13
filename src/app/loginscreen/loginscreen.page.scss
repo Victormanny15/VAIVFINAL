@@ -1,0 +1,88 @@
+ion-content {
+  --background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* Contenedor Principal */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3b6ca1, #d9e2ec);
+
+}
+
+/* Contenedor del Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 200px;
+  height: auto;
+}
+
+/* Texto de Bienvenida */
+.welcome-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.welcome-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Botón de Login */
+.ion-text-center ion-button {
+  width: 80%;
+  max-width: 300px;
+  margin: 10px auto;
+ 
+  --color: #ffffff;
+  border-radius: 10px;
+}
+
+
+
+/* Contenedor de Redes Sociales */
+.social-media-container {
+  margin-top: 20px;
+}
+
+.social-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Iconos de Redes Sociales */
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+ion-button {
+  border-radius: 10px;
+  transition: background 3s ease-in-out, color 1s ease-in-out;
+  --background: linear-gradient(45deg, #ffffff, #13181f);
+}
+
+ion-button:hover {
+  --background: linear-gradient(45deg, #000307, #1a1a2e);
+  --color: #ffffff;
+}
