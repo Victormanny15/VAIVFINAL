@@ -6,28 +6,28 @@ import { FormsModule } from '@angular/forms';
 import { IonImg } from '@ionic/angular';
 
 @Component({
-  selector: 'app-splash',
-  templateUrl: './splash.page.html',
-  styleUrls: ['./splash.page.scss'],
-  standalone: true,
-  imports: [IonContent, CommonModule, FormsModule,]
+  selector: 'app-splash', // Define el selector del componente
+  templateUrl: './splash.page.html', // Especifica la plantilla asociada
+  styleUrls: ['./splash.page.scss'], // Especifica los estilos asociados
+  standalone: true, // Define si el componente es independiente
+  imports: [IonContent, CommonModule, FormsModule] // Importa los módulos necesarios
 })
 export class SplashPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) { } // Inyecta el servicio de enrutamiento
 
   ngOnInit() {
     setTimeout(() => {
-      // Añadir clase 'hidden' para la animación de desvanecimiento
+      // Busca el contenedor de la pantalla de bienvenida
       const splashScreen = document.querySelector('.splash-container');
       if (splashScreen) {
-        splashScreen.classList.add('hidden');
+        splashScreen.classList.add('hidden'); // Agrega la clase 'hidden' para la animación de desvanecimiento
       }
       
-      // Redirigir después de la animación
+      // Redirige a la pantalla de inicio de sesión después de la animación
       setTimeout(() => {
-        this.router.navigateByUrl('/loginscreen'); // ✅ Cambiado a loginscreen
-      }, 1000); // Espera a que termine la animación antes de redirigir
-    }, 4000); // Espera 4 segundos antes de iniciar la animación
+        this.router.navigateByUrl('/loginscreen'); // Redirección a la pantalla de inicio de sesión
+      }, 1000); // Espera 1 segundo después de la animación para la redirección
+    }, 4000); // Espera 4 segundos antes de iniciar la animación de desvanecimiento
   }
 }

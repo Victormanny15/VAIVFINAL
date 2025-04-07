@@ -13,32 +13,84 @@
           <ion-card-title class="section-title">Luces Disponibles</ion-card-title>
         </ion-card-header>
         <ion-list>
+
+<!-- Light Item 7 -->
+<ion-item class="light-item">
+  <img [src]="light7 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio A</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light7 === 'on', 'btn-off': light7 === 'off'}" (click)="toggleLight('light7', '67d31611842becca9a019841')">{{ light7 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
+
+<!-- Light Item 6 -->
+<ion-item class="light-item">
+  <img [src]="light6 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio B</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light6 === 'on', 'btn-off': light6 === 'off'}" (click)="toggleLight('light6', '67d31611842becca9a019840')">{{ light6 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
+
+<!-- Light Item 5 -->
+<ion-item class="light-item">
+  <img [src]="light5 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio C</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light5 === 'on', 'btn-off': light5 === 'off'}" (click)="toggleLight('light5', '67d31611842becca9a01983f')">{{ light5 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
+
+<!-- Light Item 2 -->
+<ion-item class="light-item">
+  <img [src]="light2 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio D</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light2 === 'on', 'btn-off': light2 === 'off'}" (click)="toggleLight('light2', '67d31611842becca9a01983c')">{{ light2 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
+
           <!-- Light Item 1 -->
-          <ion-item class="light-item">
-            <img [src]="light1 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
-            <ion-label class="light-title">Luz de la Calle</ion-label>
-            <div class="button-group">
-              <ion-button [ngClass]="{'btn-on': light1 === 'on', 'btn-off': light1 === 'off'}" (click)="toggleLight('light1')">{{ light1 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
-            </div>
-          </ion-item>
+<ion-item class="light-item">
+  <img [src]="light1 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio E</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light1 === 'on', 'btn-off': light1 === 'off'}" (click)="toggleLight('light1', '67d31611842becca9a01983b')">{{ light1 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
 
-          <!-- Light Item 2 -->
-          <ion-item class="light-item">
-            <img [src]="light2 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
-            <ion-label class="light-title">Luz de la Calle B</ion-label>
-            <div class="button-group">
-              <ion-button [ngClass]="{'btn-on': light2 === 'on', 'btn-off': light2 === 'off'}" (click)="toggleLight('light2')">{{ light2 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
-            </div>
-          </ion-item>
+<!-- Light Item 4 -->
+<ion-item class="light-item">
+  <img [src]="light4 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio F</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light4 === 'on', 'btn-off': light4 === 'off'}" (click)="toggleLight('light4', '67d31611842becca9a01983e')">{{ light4 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
 
-          <!-- Light Item 3 -->
-          <ion-item class="light-item">
-            <img [src]="light3 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
-            <ion-label class="light-title">Luz de la Plaza</ion-label>
-            <div class="button-group">
-              <ion-button [ngClass]="{'btn-on': light3 === 'on', 'btn-off': light3 === 'off'}" (click)="toggleLight('light3')">{{ light3 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
-            </div>
-          </ion-item>
+
+<!-- Light Item 3 -->
+<ion-item class="light-item">
+  <img [src]="light3 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio G</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light3 === 'on', 'btn-off': light3 === 'off'}" (click)="toggleLight('light3', '67d31611842becca9a01983d')">{{ light3 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
+
+
+
+
+
+<!-- Light Item 8 -->
+<ion-item class="light-item">
+  <img [src]="light8 === 'on' ? 'assets/luzPrendida.png' : 'assets/luz.png'" alt="Custom Icon" class="light-icon" slot="start">
+  <ion-label class="light-title">Luz del Edificio G (Baños)</ion-label>
+  <div class="button-group">
+    <ion-button [ngClass]="{'btn-on': light8 === 'on', 'btn-off': light8 === 'off'}" (click)="toggleLight('light8', '67d31611842becca9a019842')">{{ light8 === 'on' ? 'Apagar' : 'Encender' }}</ion-button>
+  </div>
+</ion-item>
+
         </ion-list>
       </ion-card>
 
